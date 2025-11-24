@@ -1,0 +1,102 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #b1c6e7;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0047ab;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(235, 12, 12, 0.945);
+}
+
+/* Form Rows */
+form div {
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    width: 170px;
+    font-weight: bold;
+}
+
+/* Inputs, Textarea, and Select */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+/* Textarea */
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+/* Gender Radio Buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+form div label input {
+    width: auto;
+}
+
+/* For the inline radio labels */
+form div label[for="male"],
+form div label[for="female"],
+form div label[for="Others"] {
+    width: auto;
+    margin-right: 20px;
+}
+.submitBtn{
+    position: relative;
+    left: 20em;
+    top: 12px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input, textarea, select {
+        width: 100%;
+    }
+
+    form {
+        width: 95%;
+        align-content: center;
+    }
+}
